@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quick Notes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar colors">
+        <h1>Quick Notes</h1>
+        <div class="buttons">
+          <button class="addNote" id="addNoteBtn">+ Add Note</button>
+          <button class="toogleColor" onclick="changeColors()">🌙</button>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="card" id="card">
+          <div class="title">Exam on 20th July</div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            consectetur maiores cupiditate iure reiciendis porro rerum autem
+            nihil expedita molestiae nesciunt vero numquam, doloremque
+            necessitatibus nam, exercitationem illo assumenda? Veritatis!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="addNoteContainer">
+      <div class="card-note">
+        <div class="header">
+          <h3>Add New Note</h3>
+          <button>X</button>
+        </div>
+        <div class="title">
+          <p>Title</p>
+          <input type="text" placeholder="Enter note title..." id="title" />
+        </div>
+        <div class="description">
+          <p>Content</p>
+          <textarea name="" id="description-note" cols="30" rows="10" placeholder="Write your note here..."></textarea>
+        </div>
+        <div class="buttons">
+          <button id="cancel">Cancel</button>
+          <button id="save-note" onclick="saveMode()">Save Note</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
