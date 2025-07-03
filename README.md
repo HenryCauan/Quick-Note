@@ -32,18 +32,6 @@ cd Quick-Note
 
 Acesse a versão online: [Quick Note](quick-note-tan.vercel.app)
 
-## 🎯 Funcionalidades Principais
-
-### Criando uma Nova Nota
-- Clique no botão "Nova Nota" ou use o atalho `Ctrl + N`
-- Digite sua anotação no campo de texto
-- A nota é salva automaticamente enquanto você digita
-
-### Editando Notas
-- Clique duas vezes em qualquer nota para editá-la
-- Use `Ctrl + S` para salvar manualmente
-- `Esc` para cancelar a edição
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica
@@ -60,23 +48,11 @@ Acesse a versão online: [Quick Note](quick-note-tan.vercel.app)
 - ✅ Edge 79+
 - ✅ Navegadores móveis modernos
 
-## 🎨 Capturas de Tela
+## 🎨 Captura de Tela
 
 ![Image](https://github.com/user-attachments/assets/5725263c-6514-4898-ba34-aa3fd901853c)
 
-## 🚀 Recursos Avançados
 
-### Atalhos de Teclado
-- `Ctrl + N`: Nova nota
-- `Ctrl + S`: Salvar nota
-- `Ctrl + F`: Pesquisar
-- `Ctrl + D`: Excluir nota selecionada
-- `Ctrl + /`: Alternar modo escuro/claro
-
-### Exportação de Dados
-- Exporte suas notas em formato JSON
-- Importe notas de outros aplicativos
-- Sincronização com Google Drive (em breve)
 
 ## 🔧 Configuração de Desenvolvimento
 
@@ -130,10 +106,6 @@ Contribuições são bem-vindas! Siga estes passos:
 - Limitação de armazenamento do localStorage (≈5MB)
 - Sincronização entre abas não implementada
 - Busca não suporta expressões regulares
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 📞 Contato
 
