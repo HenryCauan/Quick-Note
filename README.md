@@ -102,22 +102,6 @@ Acesse a versão online: [Quick Note](quick-note-tan.vercel.app)
 - Editor de código (VS Code recomendado)
 - Extensão Live Server (opcional)
 
-### Estrutura do Projeto
-```
-Quick-Note/
-├── index.html          # Página principal
-├── styles/
-│   ├── main.css       # Estilos principais
-│   └── themes.css     # Temas claro/escuro
-├── scripts/
-│   ├── app.js         # Lógica principal
-│   ├── storage.js     # Gerenciamento de dados
-│   └── utils.js       # Funções utilitárias
-├── assets/
-│   ├── icons/         # Ícones SVG
-│   └── images/        # Imagens do projeto
-└── README.md
-```
 
 ### Executando em Desenvolvimento
 ```bash
