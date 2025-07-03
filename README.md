@@ -30,7 +30,7 @@ cd Quick-Note
 
 ### Uso Online
 
-Acesse a versão online: [Quick Note Live](https://henrycauan.github.io/Quick-Note/)
+Acesse a versão online: [Quick Note](quick-note-tan.vercel.app)
 
 ## 🎯 Funcionalidades Principais
 
