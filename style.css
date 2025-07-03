@@ -103,7 +103,7 @@ body {
     }
 
     .description {
-      font-size: 1em;
+      font-size: 100%;
       position: relative;
       text-align: justify;
       flex-wrap: wrap;
