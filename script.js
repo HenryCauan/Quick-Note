@@ -121,3 +121,55 @@ document.addEventListener("DOMContentLoaded", function () {
         cardNotes.forEach(note => renderCard(note));
     }
 });
+
+function changeColors() {
+    const body = document.body;
+    const container = document.querySelector('.container');
+    const navbar = document.querySelector('.navbar');
+    const cards = document.querySelectorAll('.card');
+    const content = document.querySelector('.content');
+    const toggleButton = document.querySelector('.toogleColor');
+    const textElements = document.querySelectorAll('h1, h3, p, .title, .description, .card-note .title p, .card-note .description p');
+
+    // Verifica se o tema atual é claro (padrão)
+    const isLightTheme = body.style.backgroundColor !== 'rgb(26, 28, 34)';
+
+    if (isLightTheme) {
+        // Aplica o tema escuro
+        body.style.backgroundColor = '#1a1c22';
+        container.style.backgroundColor = '#1a1c22';
+        navbar.style.backgroundColor = '#1a1c22';
+        content.style.backgroundColor = '#1a1c22';
+        toggleButton.textContent = '☀️'; // Muda o ícone para sol
+
+        // Aplica cores aos cards e textos
+        cards.forEach(card => {
+            card.style.backgroundColor = '#2b2f37';
+            card.style.color = '#ffffff';
+        });
+
+        // Muda todos os textos para branco
+        textElements.forEach(element => {
+            element.style.color = '#ffffff';
+        });
+
+    } else {
+        // Volta ao tema claro (padrão)
+        body.style.backgroundColor = '';
+        container.style.backgroundColor = '';
+        navbar.style.backgroundColor = 'white';
+        content.style.backgroundColor = '#f2f3f8';
+        toggleButton.textContent = '🌙'; // Muda o ícone para lua
+
+        // Volta às cores originais dos cards e textos
+        cards.forEach(card => {
+            card.style.backgroundColor = 'white';
+            card.style.color = '';
+        });
+
+        // Remove a cor branca dos textos
+        textElements.forEach(element => {
+            element.style.color = '';
+        });
+    }
+}
