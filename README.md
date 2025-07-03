@@ -44,16 +44,6 @@ Acesse a versão online: [Quick Note](quick-note-tan.vercel.app)
 - Use `Ctrl + S` para salvar manualmente
 - `Esc` para cancelar a edição
 
-### Organizando Notas
-- Arraste e solte para reordenar suas notas
-- Use o campo de pesquisa para encontrar notas específicas
-- Marque notas como favoritas para acesso rápido
-
-### Personalizando a Interface
-- Clique no ícone de tema para alternar entre modo claro e escuro
-- Ajuste o tamanho da fonte nas configurações
-- Escolha entre diferentes layouts de visualização
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica
