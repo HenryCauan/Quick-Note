@@ -128,8 +128,14 @@ function changeColors() {
     const navbar = document.querySelector('.navbar');
     const cards = document.querySelectorAll('.card');
     const content = document.querySelector('.content');
+    const closed = document.getElementById("closed")
     const toggleButton = document.querySelector('.toogleColor');
     const textElements = document.querySelectorAll('h1, h3, p, .title, .description, .card-note .title p, .card-note .description p');
+    const cardActionButtons = document.querySelectorAll('.option button');
+    const addNoteContainer = document.querySelector('.addNoteContainer');
+    const cardNote = document.querySelector('.card-note');
+    const modalInputs = document.querySelectorAll('.card-note input, .card-note textarea');
+    const modalTexts = document.querySelectorAll('.card-note h3, .card-note p');
 
     // Verifica se o tema atual é claro (padrão)
     const isLightTheme = body.style.backgroundColor !== 'rgb(26, 28, 34)';
@@ -139,6 +145,7 @@ function changeColors() {
         body.style.backgroundColor = '#1a1c22';
         container.style.backgroundColor = '#1a1c22';
         navbar.style.backgroundColor = '#1a1c22';
+                    closed.style.color = "#ffffff"
         content.style.backgroundColor = '#1a1c22';
         toggleButton.textContent = '☀️'; // Muda o ícone para sol
 
@@ -153,8 +160,32 @@ function changeColors() {
             element.style.color = '#ffffff';
         });
 
+        // Muda os botões de ação para branco
+        cardActionButtons.forEach(button => {
+            button.style.color = '#ffffff';
+        });
+
+        // Aplica o tema escuro ao modal
+        if (cardNote) {
+            cardNote.style.backgroundColor = '#2b2f37';
+            cardNote.style.color = '#ffffff';
+        }
+
+        // Aplica cores aos inputs e textarea do modal
+        modalInputs.forEach(input => {
+            input.style.backgroundColor = '#1e1f26';
+            input.style.color = '#ffffff';
+            input.style.border = '1px solid #1e1f26';
+        });
+
+        // Aplica cor branca aos textos do modal
+        modalTexts.forEach(text => {
+            text.style.color = '#ffffff';
+        });
+
     } else {
         // Volta ao tema claro (padrão)
+        closed.style.color = "black"
         body.style.backgroundColor = '';
         container.style.backgroundColor = '';
         navbar.style.backgroundColor = 'white';
@@ -170,6 +201,29 @@ function changeColors() {
         // Remove a cor branca dos textos
         textElements.forEach(element => {
             element.style.color = '';
+        });
+
+        // Remove a cor branca dos botões de ação
+        cardActionButtons.forEach(button => {
+            button.style.color = '';
+        });
+
+        // Volta ao tema claro no modal
+        if (cardNote) {
+            cardNote.style.backgroundColor = 'white';
+            cardNote.style.color = '';
+        }
+
+        // Volta às cores originais dos inputs e textarea do modal
+        modalInputs.forEach(input => {
+            input.style.backgroundColor = '';
+            input.style.color = '';
+            input.style.border = '';
+        });
+
+        // Volta às cores originais dos textos do modal
+        modalTexts.forEach(text => {
+            text.style.color = '';
         });
     }
 }
