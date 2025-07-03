@@ -158,8 +158,8 @@ body {
   .card-note {
     position: relative;
     overflow: hidden;
-    width: 30vw;
-    height: 50dvh;
+    width: 35rem;
+    height: 30rem;
     background-color: white;
     border-radius: 10px;
     padding: 2rem;
@@ -184,6 +184,7 @@ body {
     }
 
     .title {
+        margin-top: 1rem;
       font-size: 16px;
       font-weight: 500;
       display: flex;
@@ -232,7 +233,7 @@ body {
       display: flex;
       justify-content: end;
       align-items: center;
-      margin-top: 1.5rem;
+      margin-top: 2.5rem;
       gap: 1rem;
 
       button {
