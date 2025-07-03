@@ -41,6 +41,7 @@ function saveMode() {
             input.value = "";
             inputDescription.value = "";
             document.querySelector('.addNoteContainer').style.visibility = 'hidden';
+            checkEmptyNotes();
         }
     };
 }
@@ -102,6 +103,7 @@ function renderCard(note) {
             cardNotes.splice(cardIndex, 1);
             localStorage.setItem("cardNotes", JSON.stringify(cardNotes));
             card.remove();
+            checkEmptyNotes();
         }
     });
 
@@ -120,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardNotes = JSON.parse(savedNotes);
         cardNotes.forEach(note => renderCard(note));
     }
+    checkEmptyNotes();
 });
 
 function changeColors() {
@@ -227,3 +230,44 @@ function changeColors() {
         });
     }
 }
+
+function checkEmptyNotes() {
+    const content = document.getElementById("content");
+    const emptyMessage = document.getElementById("empty-message");
+    const addNoteBtn = document.getElementById("addNoteBtn");
+
+    // Remove a mensagem existente, se houver
+    if (emptyMessage) {
+        emptyMessage.remove();
+    }
+
+    // Se não houver notas, cria a mensagem e o botão
+    if (cardNotes.length === 0) {
+        const emptyMessageDiv = document.createElement("div");
+        emptyMessageDiv.id = "empty-message";
+        emptyMessageDiv.style.textAlign = "center";
+        emptyMessageDiv.style.position = "absolute";
+        emptyMessageDiv.style.top = "50%";
+        emptyMessageDiv.style.left = "50%";
+        emptyMessageDiv.style.transform = "translate(-50%, -50%)";
+        emptyMessageDiv.style.width = "100%";
+
+        const message = document.createElement("h1");
+        message.textContent = "📝 Nenhuma nota ainda. Crie sua primeira anotação!";
+        message.style.color = "inherit";
+
+        const newNoteBtn = document.createElement("button");
+        newNoteBtn.textContent = "+ Nova Nota";
+        newNoteBtn.classList.add("addNotee");
+        newNoteBtn.style.marginTop = "1rem";
+        newNoteBtn.addEventListener("click", function() {
+            document.querySelector('.addNoteContainer').style.visibility = 'visible';
+        });
+
+        emptyMessageDiv.appendChild(message);
+        emptyMessageDiv.appendChild(newNoteBtn);
+        content.appendChild(emptyMessageDiv);
+    }
+}
+
+checkEmptyNotes();

@@ -255,6 +255,18 @@ body {
   }
 }
 
+.addNotee {
+    width: 30%;
+    color: white;
+        height: 3rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 500;
+    background-color: #8e90fd;
+}
+
 @media (max-width: 1280px) {
   .content {
     grid-template-columns: repeat(3, 1fr);
