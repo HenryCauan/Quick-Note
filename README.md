@@ -1,6 +1,6 @@
 # Quick Note 📝
 
-Um aplicativo web simples e intuitivo para anotações rápidas, desenvolvido com HTML, CSS e JavaScript vanilla. Perfeito para capturar pensamentos, lembretes e tarefas de forma rápida e eficiente.
+Um aplicativo web simples e intuitivo para anotações rápidas, desenvolvido com HTML, CSS e JavaScript vanilla. Perfeito para capturar pensamentos, lembretes e tarefas de forma rápida e eficiente, a nota tem limite de caracteres de no maximo 400.
 
 ## ✨ Funcionalidades
 
