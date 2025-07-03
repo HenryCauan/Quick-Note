@@ -62,14 +62,7 @@ Acesse a versão online: [Quick Note](quick-note-tan.vercel.app)
 
 ## 🎨 Capturas de Tela
 
-### Modo Claro
-![Modo Claro](./screenshots/light-mode.png)
-
-### Modo Escuro
-![Modo Escuro](./screenshots/dark-mode.png)
-
-### Versão Mobile
-![Mobile](./screenshots/mobile-view.png)
+![Image](https://github.com/user-attachments/assets/5725263c-6514-4898-ba34-aa3fd901853c)
 
 ## 🚀 Recursos Avançados
 
